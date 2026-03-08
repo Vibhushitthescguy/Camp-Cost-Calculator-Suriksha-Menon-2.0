@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Camp Internal Cost Planner</title>
+<title>Camp Cost Calculator</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 @font-face{font-family:'Bookman';src:local('Bookman Old Style'),local('URW Bookman'),local('Bookman');font-weight:normal}
@@ -209,7 +209,7 @@ select.ic{cursor:pointer;-webkit-appearance:none;appearance:none;background-imag
   <div class="mh-in">
     <div class="mh-left">
       <div class="mh-logo"><svg viewBox="0 0 20 20" fill="none" stroke="#051c2c" stroke-width="1.8"><path d="M3 17V7l7-4 7 4v10"/><path d="M7 17v-6h6v6"/><line x1="3" y1="7" x2="17" y2="7"/></svg></div>
-      <div><div class="mh-ey">Camp Internal Cost Planner</div><div class="mh-t" id="mhClient">Unified Dashboard</div></div>
+      <div><div class="mh-ey">Camp Cost Calculator</div><div class="mh-t" id="mhClient">Unified Dashboard</div></div>
     </div>
     <div class="mh-right">
       <div class="mh-cl">Grand Total</div>
@@ -332,8 +332,8 @@ select.ic{cursor:pointer;-webkit-appearance:none;appearance:none;background-imag
     <div class="pnl-b">
       <div class="ig ig-3">
         <div><div class="il"><div class="id"></div>Number of People</div><input type="number" class="ic" id="a_people" value="1500" min="1" disabled style="opacity:.7;cursor:not-allowed"><div style="font-size:9px;color:var(--w3);margin-top:3px;font-style:italic">Linked from Summary</div></div>
-        <div><div class="il"><div class="id"></div>Materials</div><select class="ic" id="a_materials" onchange="calcAll()"><option>Insulated (Hard) & Fire Retardant</option><option>Insulated (Sandwich Panel) & Fire Retardant</option></select></div>
-        <div><div class="il"><div class="id"></div>People per Sleeping Tent</div><select class="ic" id="a_ppt" onchange="calcAll()"><option value="25">25</option><option value="50">50</option><option value="100" selected>100</option></select></div>
+        <div><div class="il"><div class="id"></div>Accomadation Tent Material</div><select class="ic" id="a_materials" onchange="calcAll()"><option>Insulated (Hard) & Fire Retardant</option><option>Insulated (Sandwich Panel) & Fire Retardant</option></select></div>
+        <div><div class="il"><div class="id"></div>Number of People per accomodation Tent</div><select class="ic" id="a_ppt" onchange="calcAll()"><option value="25">25</option><option value="50">50</option><option value="100" selected>100</option></select></div>
       </div>
     </div>
   </div>
